@@ -6,8 +6,8 @@ import requests # request img from web
 import shutil # save img locally
 import os # basic commands
 from PIL import Image # Imports PIL module  
-timer = 30 #
-repeat = 10
+timer = 30 # Wait time
+repeat = 5 # amout of times it downloads itself lol
 print("Import Complete")
 
 #file_name = input('Save image as (string):') # prompt user for file name THIS IS TEMPERARY
@@ -23,7 +23,6 @@ def imagedownloader(imageurl):
     file_name = "testimage-" + str(imagenumber) + ".jpg"
     
     #--------------
-    # WILL ADD CODE LATER FOR NOW THIS STAYS EMPTY CUZ IM FUCKING LAZY
     if res.status_code == 200:
         with open(file_name,'wb') as f:
             shutil.copyfileobj(res.raw, f)
@@ -34,7 +33,7 @@ def imagedownloader(imageurl):
     
     # open method used to open different extension image file 
     print("pretest")
-    filelocation = "D:\.D.Downloads\SomeDumbassProgram" + file_name
+    filelocation = "D:\.D.Downloads\SomeDumbassProgram" + file_name #CHANGE IT TO YOUR OWN DOWNLOAD'S SLOT OR PLACE YOU WANT IMAGES TO GO
     #im = Image.open(filelocation) 
     im = Image.open(r"D:\.D.Downloads\SomeDumbassProgram\imagetest.jpg")
     im.show()  
