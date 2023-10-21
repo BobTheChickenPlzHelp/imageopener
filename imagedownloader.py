@@ -33,4 +33,8 @@ def imagedownloader(imageurl):
 imagedownloader(url)
 
 # open method used to open different extension image file 
-im = Image.open(r"D:\.D.Downloads\SomeDumbassProgram\testimage.jpg") 
+print("pretest")
+filelocation = "D:\.D.Downloads\SomeDumbassProgram" + file_name
+#im = Image.open(filelocation) 
+im = Image.open(r"D:\.D.Downloads\SomeDumbassProgram\imagetest.jpg")
+im.show()  
