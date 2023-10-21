@@ -13,39 +13,36 @@ print("Import Complete")
 #file_name = input('Save image as (string):') # prompt user for file name THIS IS TEMPERARY
 # gunna make "file_name" = "gaysex-[random int 1-100000]"
 # this will make the program be able to create(download) multiplle images of itself :)
+
+#chooses Url to grab image from (USE IMAGE ADRESS)
 url = "https://steamuserimages-a.akamaihd.net/ugc/1824532753041605480/9A6C19AD80E2DBA6ECC00682A6FE692ED178247E/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 res = requests.get(url, stream = True)
 
 print("Startup Complete")
 def imagedownloader(imageurl):
     print("you called imagedownloader")
-    imagenumber = (random.randint(1, 100000))
-    file_name = "testimage-" + str(imagenumber) + ".jpg"
-    
+    imagenumber = (random.randint(1, 100000)) # Image Id number
+    file_name = "testimage-" + str(imagenumber) + ".jpg" # Image namer thing
     #--------------
     if res.status_code == 200:
         with open(file_name,'wb') as f:
             shutil.copyfileobj(res.raw, f)
-        print('Image sucessfully Downloaded: ',file_name)
+        print('Image sucessfully Downloaded: ',file_name) #YIPEEE
     else:
-        print('Image Couldn\'t be retrieved')
+        print('Image Couldn\'t be retrieved') #prints if the image adress is invalid
     #--------------
-    
     # open method used to open different extension image file 
     print("pretest")
     filelocation = "D:\.D.Downloads\SomeDumbassProgram" + file_name #CHANGE IT TO YOUR OWN DOWNLOAD'S SLOT OR PLACE YOU WANT IMAGES TO GO
-    #im = Image.open(filelocation) 
-    im = Image.open(r"D:\.D.Downloads\SomeDumbassProgram\imagetest.jpg")
-    im.show()  
-
-    
+    #im = Image.open(filelocation) # Not needed anymore but kept because I can
+    im = Image.open(r"D:\.D.Downloads\SomeDumbassProgram\imagetest.jpg") #set this to sumthin i forget its been 11 hours
+    im.show()  #shows imgae that it downloaded
     #--------------
-    
-    
-    #r = requests.get('https://steamuserimages-a.akamaihd.net/ugc/1824532753041605480/9A6C19AD80E2DBA6ECC00682A6FE692ED178247E/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false')
-    #'Requests:' in r.text
 x = 1
 for x in range(repeat):
     x = x + 1
     imagedownloader(url)
 
+
+# Created by BobTheChickenPlzHelp on GitHub
+# https://github.com/BobTheChickenPlzHelp/imageopener
