@@ -7,4 +7,6 @@ Github Page https://github.com/BobTheChickenPlzHelp
 
 This is made so I can learn how to download stuff from the web using python It was a fun project to mess around with for a bit I doubt anything will come out of this 
 
-![Image The Progam Downloads]([http://url/to/img.png](https://steamuserimages-a.akamaihd.net/ugc/1824532753041605480/9A6C19AD80E2DBA6ECC00682A6FE692ED178247E/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)https://steamuserimages-a.akamaihd.net/ugc/1824532753041605480/9A6C19AD80E2DBA6ECC00682A6FE692ED178247E/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
+Image It downloads:
+(you can change in the editor)
+![Image The Progam Downloads](https://github.com/BobTheChickenPlzHelp/imageopener/blob/main/imagetest.jpg?raw=true)
